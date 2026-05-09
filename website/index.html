@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lotus Growth</title>
+    <meta name="description" content="An open-source growth agent starter kit for founders and small teams.">
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#">Lotus Growth</a>
+      <nav>
+        <a href="#workflow">Workflow</a>
+        <a href="#safety">Safety</a>
+        <a href="#start">Start</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Open-source growth agent starter kit</p>
+          <h1>Turn growth into a daily operating loop.</h1>
+          <p class="lead">
+            Lotus Growth helps builders plan channel work, draft useful posts, keep human approval in the loop, and remember what happened next.
+          </p>
+          <div class="actions">
+            <a class="button primary" href="../README.md">Read the docs</a>
+            <a class="button secondary" href="#start">Run locally</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <img src="./assets/lotus-growth-hero.png" alt="A calm desktop workspace for operating a growth agent loop">
+          <div class="terminal" aria-label="Lotus Growth CLI preview">
+            <div class="terminal-bar">
+              <span></span><span></span><span></span>
+            </div>
+            <pre><code>$ npm run demo
+{
+  "status": "ready",
+  "next": [
+    "find 3 high-signal conversations",
+    "draft one useful contribution",
+    "wait for human approval"
+  ]
+}</code></pre>
+          </div>
+        </div>
+      </section>
+
+      <section id="workflow" class="section">
+        <h2>A growth system you can inspect</h2>
+        <div class="grid">
+          <article>
+            <h3>Listen</h3>
+            <p>Find conversations where your audience already shows pain, intent, or confusion.</p>
+          </article>
+          <article>
+            <h3>Plan</h3>
+            <p>Convert channel context into small tasks your agent can prepare and you can review.</p>
+          </article>
+          <article>
+            <h3>Draft</h3>
+            <p>Create specific posts and replies that help first and promote only when appropriate.</p>
+          </article>
+          <article>
+            <h3>Remember</h3>
+            <p>Keep lightweight notes so the next plan improves instead of starting over.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="safety" class="section split">
+        <div>
+          <h2>Built for human-in-the-loop growth</h2>
+          <p>
+            Lotus Growth is not an auto-spam framework. The default guardrails require approval before public actions, keep runtime data private, and avoid platform bypass behavior.
+          </p>
+        </div>
+        <ul class="checks">
+          <li>No public post without review</li>
+          <li>No committed cookies or session data</li>
+          <li>No fake personas</li>
+          <li>No link-first posting</li>
+        </ul>
+      </section>
+
+      <section id="start" class="section start">
+        <h2>Run the starter kit</h2>
+        <pre><code>git clone https://github.com/your-name/lotus-growth.git
+cd lotus-growth
+npm install
+npm run demo</code></pre>
+      </section>
+    </main>
+  </body>
+</html>

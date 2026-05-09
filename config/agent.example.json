@@ -1,0 +1,10 @@
+{
+  "name": "lotus-growth-agent",
+  "maxDailyActions": 4,
+  "guardrails": [
+    "Never publish public posts without human approval.",
+    "Prefer useful replies before product links.",
+    "Do not scrape private pages or bypass platform rules.",
+    "Keep a short note after every action so tomorrow's plan improves."
+  ]
+}

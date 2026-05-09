@@ -1,0 +1,18 @@
+{
+  "accounts": [
+    {
+      "id": "founder-x",
+      "platform": "x",
+      "status": "active",
+      "voice": "clear, specific, useful",
+      "audience": "indie hackers and builders"
+    },
+    {
+      "id": "reddit-warmup",
+      "platform": "reddit",
+      "status": "paused",
+      "voice": "community-first and non-promotional",
+      "audience": "founders discussing growth and automation"
+    }
+  ]
+}

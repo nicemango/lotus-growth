@@ -1,0 +1,30 @@
+{
+  "name": "lotus-growth",
+  "version": "0.1.0",
+  "description": "Open-source growth agent starter kit for founders, indie hackers, and small teams.",
+  "type": "module",
+  "license": "MIT",
+  "private": false,
+  "bin": {
+    "lotus-growth": "./bin/lotus-growth.mjs"
+  },
+  "scripts": {
+    "start": "node ./bin/lotus-growth.mjs",
+    "demo": "node ./bin/lotus-growth.mjs demo",
+    "status": "node ./bin/lotus-growth.mjs status",
+    "plan": "node ./bin/lotus-growth.mjs plan",
+    "draft": "node ./bin/lotus-growth.mjs draft",
+    "test": "node --test tests/*.test.mjs"
+  },
+  "keywords": [
+    "growth",
+    "agent",
+    "marketing",
+    "indie-hacker",
+    "automation",
+    "startup"
+  ],
+  "engines": {
+    "node": ">=20"
+  }
+}
