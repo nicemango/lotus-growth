@@ -2,6 +2,8 @@
 
 Lotus Growth is an open-source starter kit for building a growth agent.
 
+![Lotus Growth landing page screenshot](./docs/assets/lotus-growth-screenshot.png)
+
 It helps founders, indie hackers, and small teams turn growth from scattered ideas into a repeatable operating loop:
 
 - listen for high-signal conversations
@@ -20,19 +22,26 @@ Lotus Growth gives you a small foundation for that system.
 
 ## Quick Start
 
+Run it without cloning the repository:
+
 ```bash
-git clone https://github.com/your-name/lotus-growth.git
-cd lotus-growth
-npm install
-npm run demo
+pnpm dlx github:nicemango/lotus-growth demo
 ```
 
-Try individual commands:
+Run individual commands the same way:
 
 ```bash
-npm run status
-npm run plan
-npm run draft -- "What changed after using a daily growth queue"
+pnpm dlx github:nicemango/lotus-growth status
+pnpm dlx github:nicemango/lotus-growth plan
+pnpm dlx github:nicemango/lotus-growth draft "What changed after using a daily growth queue"
+```
+
+After the npm package is published, the shorter package name will work:
+
+```bash
+pnpm dlx lotus-growth demo
+pnpm add -g lotus-growth
+lotus-growth plan
 ```
 
 ## What You Get
@@ -60,11 +69,18 @@ Project context
 ## Commands
 
 ```bash
-npm run demo
-npm run status
-npm run plan
-npm run draft
-npm test
+pnpm dlx github:nicemango/lotus-growth demo
+pnpm dlx github:nicemango/lotus-growth status
+pnpm dlx github:nicemango/lotus-growth plan
+pnpm dlx github:nicemango/lotus-growth draft "Your topic"
+```
+
+For local development after cloning:
+
+```bash
+pnpm install
+pnpm demo
+pnpm test
 ```
 
 ## Configuration

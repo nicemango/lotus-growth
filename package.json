@@ -5,6 +5,23 @@
   "type": "module",
   "license": "MIT",
   "private": false,
+  "homepage": "https://github.com/nicemango/lotus-growth#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nicemango/lotus-growth.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nicemango/lotus-growth/issues"
+  },
+  "files": [
+    "bin",
+    "config",
+    "docs",
+    "src",
+    "website",
+    "README.md",
+    "LICENSE"
+  ],
   "bin": {
     "lotus-growth": "./bin/lotus-growth.mjs"
   },
