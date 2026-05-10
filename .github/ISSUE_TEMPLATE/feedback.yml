@@ -1,0 +1,35 @@
+name: Launch feedback
+description: Share feedback on Lotus Growth's positioning, install path, or workflow.
+title: "[Feedback]: "
+labels: ["feedback"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking a look. Specific feedback is more useful than broad praise.
+  - type: textarea
+    id: understood
+    attributes:
+      label: What did you understand Lotus Growth does?
+      description: A short plain-language summary is enough.
+    validations:
+      required: true
+  - type: textarea
+    id: confusing
+    attributes:
+      label: What was confusing or unclear?
+      description: Mention README, website, install command, workflow, or positioning if relevant.
+    validations:
+      required: false
+  - type: textarea
+    id: concern
+    attributes:
+      label: Did anything feel too close to spam or unsafe automation?
+    validations:
+      required: false
+  - type: textarea
+    id: request
+    attributes:
+      label: What should a practical growth agent help with first?
+    validations:
+      required: false

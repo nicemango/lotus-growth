@@ -72,6 +72,10 @@ The static project site lives in [`website/`](./website) and is deployed with Gi
 
 https://nicemango.github.io/lotus-growth/
 
+## Launch Feedback
+
+The first promotion round uses the GitHub tarball quick start while npm publishing stays optional. See [`docs/launch-round-1.md`](./docs/launch-round-1.md) for the launch plan and [`docs/launch-feedback.md`](./docs/launch-feedback.md) for feedback tracking.
+
 ## Example
 
 See [`examples/solo-founder-saas`](./examples/solo-founder-saas) for a concrete setup for a solo founder growing a SaaS product on X and Reddit.
@@ -220,6 +224,10 @@ lotus-growth plan
 静态介绍页位于 [`website/`](./website)，通过 GitHub Pages 从 `main` 分支部署：
 
 https://nicemango.github.io/lotus-growth/
+
+## 启动反馈
+
+第一轮推广先使用 GitHub tarball 快速开始，npm 发布暂不作为前置条件。执行计划见 [`docs/launch-round-1.md`](./docs/launch-round-1.md)，反馈记录见 [`docs/launch-feedback.md`](./docs/launch-feedback.md)。
 
 ## 示例
 
