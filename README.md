@@ -27,17 +27,17 @@ Run it without cloning the repository:
 ```bash
 mkdir my-growth-agent
 cd my-growth-agent
-pnpm dlx github:nicemango/lotus-growth init
-pnpm dlx github:nicemango/lotus-growth demo
+pnpm dlx https://codeload.github.com/nicemango/lotus-growth/tar.gz/main init
+pnpm dlx https://codeload.github.com/nicemango/lotus-growth/tar.gz/main demo
 ```
 
 Run individual commands the same way:
 
 ```bash
-pnpm dlx github:nicemango/lotus-growth init
-pnpm dlx github:nicemango/lotus-growth status
-pnpm dlx github:nicemango/lotus-growth plan
-pnpm dlx github:nicemango/lotus-growth draft "What changed after using a daily growth queue"
+pnpm dlx https://codeload.github.com/nicemango/lotus-growth/tar.gz/main init
+pnpm dlx https://codeload.github.com/nicemango/lotus-growth/tar.gz/main status
+pnpm dlx https://codeload.github.com/nicemango/lotus-growth/tar.gz/main plan
+pnpm dlx https://codeload.github.com/nicemango/lotus-growth/tar.gz/main draft "What changed after using a daily growth queue"
 ```
 
 After the npm package is published, the shorter package name will work:
@@ -74,11 +74,11 @@ Project context
 ## Commands
 
 ```bash
-pnpm dlx github:nicemango/lotus-growth init
-pnpm dlx github:nicemango/lotus-growth demo
-pnpm dlx github:nicemango/lotus-growth status
-pnpm dlx github:nicemango/lotus-growth plan
-pnpm dlx github:nicemango/lotus-growth draft "Your topic"
+pnpm dlx https://codeload.github.com/nicemango/lotus-growth/tar.gz/main init
+pnpm dlx https://codeload.github.com/nicemango/lotus-growth/tar.gz/main demo
+pnpm dlx https://codeload.github.com/nicemango/lotus-growth/tar.gz/main status
+pnpm dlx https://codeload.github.com/nicemango/lotus-growth/tar.gz/main plan
+pnpm dlx https://codeload.github.com/nicemango/lotus-growth/tar.gz/main draft "Your topic"
 ```
 
 For local development after cloning:
