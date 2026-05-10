@@ -31,7 +31,7 @@
     "LICENSE"
   ],
   "bin": {
-    "lotus-growth": "./bin/lotus-growth.mjs"
+    "lotus-growth": "bin/lotus-growth.mjs"
   },
   "scripts": {
     "start": "node ./bin/lotus-growth.mjs",

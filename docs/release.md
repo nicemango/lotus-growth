@@ -46,6 +46,14 @@ If the package has not been published yet, npm returns 404. That is expected bef
 pnpm run release:publish
 ```
 
+If your npm account requires two-factor authentication for publishing, avoid pasting the OTP into chat or shell history. Run:
+
+```bash
+read -s NPM_CONFIG_OTP
+pnpm run release:publish
+unset NPM_CONFIG_OTP
+```
+
 After publishing, verify:
 
 ```bash
