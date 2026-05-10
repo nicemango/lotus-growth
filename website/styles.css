@@ -20,6 +20,7 @@ body {
   background: var(--paper);
   color: var(--ink);
   font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  overflow-x: hidden;
 }
 
 a {
@@ -63,6 +64,11 @@ nav a {
   padding: clamp(52px, 8vw, 112px) clamp(20px, 5vw, 72px);
 }
 
+.hero-copy,
+.hero-visual {
+  min-width: 0;
+}
+
 .eyebrow {
   color: var(--green);
   font-weight: 720;
@@ -101,6 +107,14 @@ h3 {
   font-size: 20px;
   line-height: 1.55;
   color: var(--muted);
+}
+
+.mobile-title {
+  display: none;
+}
+
+.zh {
+  color: #405149;
 }
 
 .actions {
@@ -185,6 +199,7 @@ pre {
   white-space: pre-wrap;
   overflow: auto;
   line-height: 1.55;
+  max-width: 100%;
 }
 
 .terminal pre {
@@ -194,6 +209,22 @@ pre {
 .section {
   padding: clamp(52px, 8vw, 96px) clamp(20px, 5vw, 72px);
   border-top: 1px solid var(--line);
+}
+
+.section-label {
+  margin-bottom: 12px;
+  color: var(--green);
+  font-size: 13px;
+  font-weight: 760;
+  text-transform: uppercase;
+}
+
+.section-intro {
+  max-width: 760px;
+  color: var(--muted);
+  font-size: 18px;
+  line-height: 1.65;
+  margin-bottom: 26px;
 }
 
 .grid {
@@ -213,6 +244,10 @@ article p,
 .split p {
   color: var(--muted);
   line-height: 1.6;
+}
+
+article p:last-child {
+  margin-bottom: 0;
 }
 
 .split {
@@ -243,6 +278,19 @@ article p,
   padding: 22px;
 }
 
+.columns {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 28px;
+  max-width: 980px;
+}
+
+.columns p {
+  color: var(--muted);
+  font-size: 18px;
+  line-height: 1.65;
+}
+
 @media (max-width: 860px) {
   .site-header {
     align-items: flex-start;
@@ -251,12 +299,38 @@ article p,
   }
 
   .hero,
-  .split {
+  .split,
+  .columns {
     grid-template-columns: 1fr;
   }
 
   .hero {
+    display: block;
     min-height: auto;
+    padding: 52px 24px;
+  }
+
+  h1 {
+    font-size: 36px;
+    line-height: 1.06;
+  }
+
+  .hero-copy,
+  .hero-visual,
+  .lead {
+    max-width: min(330px, calc(100vw - 48px));
+  }
+
+  .desktop-title {
+    display: none;
+  }
+
+  .mobile-title {
+    display: inline;
+  }
+
+  .lead {
+    font-size: 17px;
   }
 
   .grid {
@@ -268,7 +342,17 @@ article p,
     margin-top: -36px;
   }
 
+  .hero-visual {
+    margin-top: 28px;
+  }
+
+  .terminal pre,
+  .start pre {
+    font-size: 12px;
+  }
+
   nav {
     flex-wrap: wrap;
+    gap: 14px;
   }
 }

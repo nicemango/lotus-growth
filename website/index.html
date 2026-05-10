@@ -3,17 +3,17 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Lotus Growth</title>
-    <meta name="description" content="An open-source growth agent starter kit for founders and small teams.">
+    <title>Lotus Growth | 开源增长 Agent</title>
+    <meta name="description" content="An open-source growth agent starter kit for founders and small teams. 开源增长 Agent 启动套件，帮独立开发者把增长变成可持续执行的工作流。">
     <link rel="stylesheet" href="./styles.css">
   </head>
   <body>
     <header class="site-header">
       <a class="brand" href="#">Lotus Growth</a>
       <nav>
-        <a href="#workflow">Workflow</a>
-        <a href="#safety">Safety</a>
-        <a href="#start">Start</a>
+        <a href="#workflow">Workflow / 工作流</a>
+        <a href="#safety">Safety / 安全</a>
+        <a href="#start">Start / 开始</a>
       </nav>
     </header>
 
@@ -21,13 +21,19 @@
       <section class="hero">
         <div class="hero-copy">
           <p class="eyebrow">Open-source growth agent starter kit</p>
-          <h1>Turn growth into a daily operating loop.</h1>
+          <h1>
+            <span class="desktop-title">Turn growth into a daily operating loop.</span>
+            <span class="mobile-title">Turn growth<br>into a daily<br>operating loop.</span>
+          </h1>
           <p class="lead">
             Lotus Growth helps builders plan channel work, draft useful posts, keep human approval in the loop, and remember what happened next.
           </p>
+          <p class="lead zh">
+            开源增长 Agent 启动套件，帮助独立开发者和小团队规划渠道动作、生成有用草稿、保留人工审核，并把增长变成每天可执行的闭环。
+          </p>
           <div class="actions">
-            <a class="button primary" href="../README.md">Read the docs</a>
-            <a class="button secondary" href="#start">Run locally</a>
+            <a class="button primary" href="../README.md">Read docs / 阅读文档</a>
+            <a class="button secondary" href="#start">Run / 运行</a>
           </div>
         </div>
         <div class="hero-visual">
@@ -51,47 +57,72 @@ $ pnpm dlx lotus-growth demo
       </section>
 
       <section id="workflow" class="section">
+        <p class="section-label">Workflow / 工作流</p>
         <h2>A growth system you can inspect</h2>
+        <p class="section-intro">一个可检查、可修改、可审查的增长系统，而不是自动 spam 机器人。</p>
         <div class="grid">
           <article>
             <h3>Listen</h3>
             <p>Find conversations where your audience already shows pain, intent, or confusion.</p>
+            <p class="zh">发现用户已经表达痛点、意图或困惑的真实对话。</p>
           </article>
           <article>
             <h3>Plan</h3>
             <p>Convert channel context into small tasks your agent can prepare and you can review.</p>
+            <p class="zh">把渠道上下文转成 Agent 可准备、你可审核的小任务。</p>
           </article>
           <article>
             <h3>Draft</h3>
             <p>Create specific posts and replies that help first and promote only when appropriate.</p>
+            <p class="zh">生成具体、有帮助、不过度推广的帖子和回复草稿。</p>
           </article>
           <article>
             <h3>Remember</h3>
             <p>Keep lightweight notes so the next plan improves instead of starting over.</p>
+            <p class="zh">保留轻量记录，让下一轮计划变好，而不是每天从零开始。</p>
           </article>
         </div>
       </section>
 
       <section id="safety" class="section split">
         <div>
+          <p class="section-label">Safety / 安全边界</p>
           <h2>Built for human-in-the-loop growth</h2>
           <p>
             Lotus Growth is not an auto-spam framework. The default guardrails require approval before public actions, keep runtime data private, and avoid platform bypass behavior.
           </p>
+          <p class="zh">
+            Lotus Growth 不是自动发帖框架。默认边界是公开动作前人工确认、私有运行数据不入库、不绕过平台规则。
+          </p>
         </div>
         <ul class="checks">
-          <li>No public post without review</li>
-          <li>No committed cookies or session data</li>
-          <li>No fake personas</li>
-          <li>No link-first posting</li>
+          <li>No public post without review / 不经审核不公开发布</li>
+          <li>No committed cookies or session data / 不提交 cookie 或 session</li>
+          <li>No fake personas / 不伪造人设</li>
+          <li>No link-first posting / 不做链接优先的 spam</li>
         </ul>
       </section>
 
       <section id="start" class="section start">
+        <p class="section-label">Start / 快速开始</p>
         <h2>Run the starter kit</h2>
+        <p class="section-intro">当前 npm 发布前可用 GitHub tarball 直接运行；发布后会切换为 <code>pnpm dlx lotus-growth</code>。</p>
         <pre><code>pnpm dlx https://codeload.github.com/nicemango/lotus-growth/tar.gz/main init
 pnpm dlx https://codeload.github.com/nicemango/lotus-growth/tar.gz/main demo
 pnpm dlx https://codeload.github.com/nicemango/lotus-growth/tar.gz/main plan</code></pre>
+      </section>
+
+      <section class="section bilingual">
+        <p class="section-label">For Builders / 给开发者</p>
+        <h2>Small enough to understand, useful enough to adapt.</h2>
+        <div class="columns">
+          <p>
+            Start with editable JSON config, run a simple CLI loop, and replace the planner with your own growth logic when you have real pressure.
+          </p>
+          <p class="zh">
+            从可编辑 JSON 配置开始，先跑通简单 CLI 闭环。等你有真实压力后，再替换规划逻辑，而不是一开始就搭重平台。
+          </p>
+        </div>
       </section>
     </main>
   </body>
