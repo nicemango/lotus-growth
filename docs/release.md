@@ -22,7 +22,14 @@ npm whoami
 If this prints nothing or fails, log in first:
 
 ```bash
-npm login
+npm login --registry=https://registry.npmjs.org/
+```
+
+If `npm login` opens `registry.npmmirror.com`, your local npm registry is pointing to a mirror. Reset it before logging in:
+
+```bash
+npm config set registry https://registry.npmjs.org/ --location=user
+npm config delete home --location=user
 ```
 
 ## 3. Confirm Package Name
@@ -36,7 +43,7 @@ If the package has not been published yet, npm returns 404. That is expected bef
 ## 4. Publish
 
 ```bash
-npm publish --access public
+pnpm run release:publish
 ```
 
 After publishing, verify:

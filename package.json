@@ -15,7 +15,8 @@
     "url": "https://github.com/nicemango/lotus-growth/issues"
   },
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
   },
   "files": [
     "bin",
@@ -40,6 +41,7 @@
     "draft": "node ./bin/lotus-growth.mjs draft",
     "test": "node --test tests/*.test.mjs",
     "pack:check": "npm pack --dry-run",
+    "release:publish": "npm publish --access public --registry=https://registry.npmjs.org/",
     "release:check": "pnpm test && npm run pack:check",
     "prepublishOnly": "pnpm run release:check"
   },
