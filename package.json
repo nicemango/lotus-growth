@@ -14,6 +14,9 @@
   "bugs": {
     "url": "https://github.com/nicemango/lotus-growth/issues"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "files": [
     "bin",
     "config",
@@ -21,6 +24,7 @@
     "examples",
     "src",
     "website",
+    "CHANGELOG.md",
     "CONTRIBUTING.md",
     "README.md",
     "LICENSE"
@@ -34,7 +38,10 @@
     "status": "node ./bin/lotus-growth.mjs status",
     "plan": "node ./bin/lotus-growth.mjs plan",
     "draft": "node ./bin/lotus-growth.mjs draft",
-    "test": "node --test tests/*.test.mjs"
+    "test": "node --test tests/*.test.mjs",
+    "pack:check": "npm pack --dry-run",
+    "release:check": "pnpm test && npm run pack:check",
+    "prepublishOnly": "pnpm run release:check"
   },
   "keywords": [
     "growth",
