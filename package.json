@@ -6,7 +6,7 @@
   "packageManager": "pnpm@9.15.2",
   "license": "MIT",
   "private": false,
-  "homepage": "https://github.com/nicemango/lotus-growth#readme",
+  "homepage": "https://nicemango.github.io/lotus-growth/",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/nicemango/lotus-growth.git"

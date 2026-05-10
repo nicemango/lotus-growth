@@ -68,7 +68,9 @@ lotus-growth plan
 
 ## Project Site
 
-The static project site lives in [`website/`](./website). It is deployed with GitHub Pages from the `main` branch.
+The static project site lives in [`website/`](./website) and is deployed with GitHub Pages:
+
+https://nicemango.github.io/lotus-growth/
 
 ## Example
 
@@ -215,7 +217,9 @@ lotus-growth plan
 
 ## 项目介绍页
 
-静态介绍页位于 [`website/`](./website)，通过 GitHub Pages 从 `main` 分支部署。
+静态介绍页位于 [`website/`](./website)，通过 GitHub Pages 从 `main` 分支部署：
+
+https://nicemango.github.io/lotus-growth/
 
 ## 示例
 
