@@ -6,19 +6,14 @@ Links:
 
 - GitHub: https://github.com/nicemango/lotus-growth
 - Website: https://nicemango.github.io/lotus-growth/
-- Current quick start before npm publish:
+- Current quick start:
 
 ```bash
 pnpm dlx https://codeload.github.com/nicemango/lotus-growth/tar.gz/main init
 pnpm dlx https://codeload.github.com/nicemango/lotus-growth/tar.gz/main demo
 ```
 
-After npm publish, switch every quick start snippet to:
-
-```bash
-pnpm dlx lotus-growth init
-pnpm dlx lotus-growth demo
-```
+The npm package is intentionally not required for the first promotion round.
 
 ## Positioning
 
@@ -277,9 +272,8 @@ Lotus Growth 想解决的是这个工作流问题。它把增长拆成一个可�
 
 Day 1:
 
-- Publish npm package after `npm login`.
-- Replace tarball quick start with `pnpm dlx lotus-growth`.
-- Post Chinese short announcement to existing personal network.
+- Post Chinese short announcement to the existing personal network.
+- Ask for feedback on the GitHub repo, website, and current tarball quick start.
 
 Day 2:
 
@@ -306,7 +300,7 @@ Day 5:
 Day 6:
 
 - Prepare Product Hunt assets.
-- Do not launch unless the npm package is published and the README command is clean.
+- Do not launch Product Hunt until the positioning and install path are proven by earlier feedback.
 
 Day 7:
 
@@ -320,4 +314,3 @@ Use this table during launch:
 | Date | Channel | Post URL | Comments | Stars | Issues | Useful feedback |
 | --- | --- | --- | ---: | ---: | ---: | --- |
 |  |  |  |  |  |  |  |
-
