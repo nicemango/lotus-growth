@@ -1,0 +1,10 @@
+{
+  "name": "solo-founder-growth-agent",
+  "maxDailyActions": 4,
+  "guardrails": [
+    "Draft before posting.",
+    "Do not publish product links in cold conversations.",
+    "Prioritize useful replies over promotional posts.",
+    "Write down what response each action received."
+  ]
+}

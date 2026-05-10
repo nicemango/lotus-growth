@@ -1,8 +1,12 @@
 # Lotus Growth
 
+[![CI](https://github.com/nicemango/lotus-growth/actions/workflows/ci.yml/badge.svg)](https://github.com/nicemango/lotus-growth/actions/workflows/ci.yml)
+
 **English** | [中文](#中文)
 
 Lotus Growth is an open-source starter kit for building a growth agent.
+
+开源增长 Agent 启动套件，帮独立开发者和小团队把增长变成可持续执行的工作流。
 
 ![Lotus Growth landing page screenshot](./docs/assets/lotus-growth-screenshot.png)
 
@@ -61,6 +65,10 @@ lotus-growth plan
 - Tests for the core planning behavior
 - A static landing page in `website/`
 - Docs for adapting the agent to your own growth workflow
+
+## Example
+
+See [`examples/solo-founder-saas`](./examples/solo-founder-saas) for a concrete setup for a solo founder growing a SaaS product on X and Reddit.
 
 ## Core Loop
 
@@ -124,6 +132,10 @@ Open `website/index.html` in a browser to view the project landing page.
 - Browser-assisted research mode
 - LLM provider adapters
 - Example deployment guide
+
+## Contributing
+
+Contributions are welcome. Start with [`CONTRIBUTING.md`](./CONTRIBUTING.md), and prefer small changes that improve first-run success, documentation clarity, or safe growth workflows.
 
 ## License
 
@@ -193,6 +205,10 @@ lotus-growth plan
 - `website/` 里的静态介绍页
 - 用于改造成自己增长工作流的文档
 
+## 示例
+
+可以参考 [`examples/solo-founder-saas`](./examples/solo-founder-saas)，里面给了一个独立开发者用 X 和 Reddit 推进 SaaS 增长的具体配置。
+
 ## 核心闭环
 
 ```text
@@ -233,6 +249,10 @@ Lotus Growth 默认是 human-in-the-loop 的增长工具：
 - 浏览器辅助研究模式
 - LLM provider adapter
 - 示例部署指南
+
+## 参与贡献
+
+欢迎贡献。先看 [`CONTRIBUTING.md`](./CONTRIBUTING.md)。当前最欢迎的是能提升首次运行成功率、文档清晰度和安全增长工作流的小改动。
 
 ## License
 

@@ -1,0 +1,18 @@
+{
+  "accounts": [
+    {
+      "id": "founder-x",
+      "platform": "x",
+      "status": "active",
+      "voice": "practical, specific, founder-led",
+      "audience": "solo founders and early SaaS operators"
+    },
+    {
+      "id": "reddit-research",
+      "platform": "reddit",
+      "status": "active",
+      "voice": "community-first, non-promotional",
+      "audience": "SaaS founders discussing customer discovery and product management"
+    }
+  ]
+}

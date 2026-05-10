@@ -1,0 +1,33 @@
+name: Feature request
+description: Suggest a growth workflow or project improvement.
+title: "[Feature]: "
+labels:
+  - enhancement
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please focus on concrete growth workflows. Avoid requests that require unattended spam, platform bypassing, or private account automation.
+  - type: textarea
+    id: workflow
+    attributes:
+      label: Growth workflow
+      description: What workflow should Lotus Growth help with?
+      placeholder: "Example: prepare daily X and Reddit listening tasks for a solo founder SaaS."
+    validations:
+      required: true
+  - type: textarea
+    id: user
+    attributes:
+      label: Who needs this?
+      description: Founder, marketer, indie hacker, small team, or another user type.
+  - type: textarea
+    id: safe
+    attributes:
+      label: Human review and safety
+      description: What should require human approval?
+  - type: textarea
+    id: output
+    attributes:
+      label: Desired output
+      description: What should the CLI or docs produce?

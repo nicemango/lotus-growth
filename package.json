@@ -3,6 +3,7 @@
   "version": "0.1.1",
   "description": "Open-source growth agent starter kit for founders, indie hackers, and small teams.",
   "type": "module",
+  "packageManager": "pnpm@9.15.2",
   "license": "MIT",
   "private": false,
   "homepage": "https://github.com/nicemango/lotus-growth#readme",
@@ -17,8 +18,10 @@
     "bin",
     "config",
     "docs",
+    "examples",
     "src",
     "website",
+    "CONTRIBUTING.md",
     "README.md",
     "LICENSE"
   ],
