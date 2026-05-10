@@ -1,5 +1,6 @@
 import { loadAccountsConfig, loadAgentConfig, loadProjectConfig } from "./config.mjs";
 import { buildStatus, createDraft, planNextActions } from "./agent.mjs";
+import { initializeProjectConfig } from "./init.mjs";
 
 function writeJson(stdout, value) {
   stdout.write(`${JSON.stringify(value, null, 2)}\n`);
@@ -9,6 +10,7 @@ function writeHelp(stdout) {
   stdout.write(`Lotus Growth\n\n`);
   stdout.write(`Usage:\n`);
   stdout.write(`  lotus-growth status    Show project and agent status\n`);
+  stdout.write(`  lotus-growth init      Create editable config files\n`);
   stdout.write(`  lotus-growth plan      Generate next growth tasks\n`);
   stdout.write(`  lotus-growth draft     Generate a sample post draft\n`);
   stdout.write(`  lotus-growth demo      Print status, plan, and draft\n`);
@@ -29,6 +31,11 @@ export async function runCli(args, io) {
 
   if (command === "help" || command === "--help" || command === "-h") {
     writeHelp(io.stdout);
+    return 0;
+  }
+
+  if (command === "init") {
+    writeJson(io.stdout, await initializeProjectConfig(io.cwd));
     return 0;
   }
 

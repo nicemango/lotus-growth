@@ -25,12 +25,16 @@ Lotus Growth gives you a small foundation for that system.
 Run it without cloning the repository:
 
 ```bash
+mkdir my-growth-agent
+cd my-growth-agent
+pnpm dlx github:nicemango/lotus-growth init
 pnpm dlx github:nicemango/lotus-growth demo
 ```
 
 Run individual commands the same way:
 
 ```bash
+pnpm dlx github:nicemango/lotus-growth init
 pnpm dlx github:nicemango/lotus-growth status
 pnpm dlx github:nicemango/lotus-growth plan
 pnpm dlx github:nicemango/lotus-growth draft "What changed after using a daily growth queue"
@@ -47,6 +51,7 @@ lotus-growth plan
 ## What You Get
 
 - A minimal Node.js CLI: `lotus-growth`
+- An `init` command that creates editable local config
 - Example project, agent, and account configuration
 - A simple growth planning loop
 - A sample draft generator
@@ -69,6 +74,7 @@ Project context
 ## Commands
 
 ```bash
+pnpm dlx github:nicemango/lotus-growth init
 pnpm dlx github:nicemango/lotus-growth demo
 pnpm dlx github:nicemango/lotus-growth status
 pnpm dlx github:nicemango/lotus-growth plan

@@ -40,6 +40,10 @@ export function planNextActions({ project, agent, accounts, now = DEFAULT_NOW })
 }
 
 export function createDraft({ project, account, topic }) {
+  if (!account) {
+    throw new Error("No active account is available. Enable an account in config/accounts.json or config/accounts.example.json.");
+  }
+
   const angle = topic || project.weeklyGoal;
   const cta = project.callToAction || "Ask a specific question and invite replies.";
 

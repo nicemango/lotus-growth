@@ -63,3 +63,10 @@ test("createDraft turns project and account context into a usable draft", () => 
   assert.match(draft.body, /Use a tiny daily queue/);
   assert.match(draft.body, /What would you automate first/);
 });
+
+test("createDraft reports a clear error when no active account is available", () => {
+  assert.throws(
+    () => createDraft({ project: context.project, account: null }),
+    /No active account/
+  );
+});
