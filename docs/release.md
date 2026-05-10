@@ -49,9 +49,7 @@ pnpm run release:publish
 If your npm account requires two-factor authentication for publishing, avoid pasting the OTP into chat or shell history. Run:
 
 ```bash
-read -s NPM_CONFIG_OTP
-pnpm run release:publish
-unset NPM_CONFIG_OTP
+pnpm run release:publish:otp
 ```
 
 After publishing, verify:

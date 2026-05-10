@@ -42,6 +42,7 @@
     "test": "node --test tests/*.test.mjs",
     "pack:check": "npm pack --dry-run",
     "release:publish": "npm publish --access public --registry=https://registry.npmjs.org/",
+    "release:publish:otp": "node ./scripts/publish-with-otp.mjs",
     "release:check": "pnpm test && npm run pack:check",
     "prepublishOnly": "pnpm run release:check"
   },
